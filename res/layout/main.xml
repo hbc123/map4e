@@ -1,0 +1,64 @@
+<!--   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" > -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapview1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:apiKey="01kP0z5v3c5Vmw-ib_FGqC70vG2gkwJksLPl9ug"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:layout_weight="1" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/endTime"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_weight="1" >
+            </TextView>
+        </LinearLayout>
+
+<!--
+        <HorizontalScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarSize="30dp"
+            android:clickable="true" >
+            <TextView
+                android:id="@+id/dummytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a test with a very very long string"
+                android:scrollbars="horizontal" 
+                android:textSize="40dp" />
+        </HorizontalScrollView>
+            -->
+
+        </LinearLayout>
+
+<!--   </RelativeLayout> -->
